@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import './SignUpForm.css';
 import { signUp } from '../../utilities/users-service';
 
 export default class SignUpForm extends Component {
@@ -39,9 +38,8 @@ export default class SignUpForm extends Component {
     const disable = this.state.password !== this.state.confirm;
     return (
       <div>
-        <div className="box">
-        <div className="inputBox">
-          <form autoComplete="off" onSubmit={this.handleSubmit}> 
+        <div className="form-container">
+          <form autoComplete="off" onSubmit={this.handleSubmit}>
             <label>Name</label>
             <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
             <label>Email</label>
@@ -52,7 +50,6 @@ export default class SignUpForm extends Component {
             <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
             <button type="submit" disabled={disable}>SIGN UP</button>
           </form>
-        </div>
         </div>
         <p className="error-message">&nbsp;{this.state.error}</p>
       </div>
