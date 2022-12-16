@@ -1,0 +1,22 @@
+
+.Footer  {
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-black);
+    text-align: center;
+}
+
+.Footer span {
+  color: rgb(87, 91, 192)
+}
+
+.Footer  h5 {
+  color: var(--clr-white);
+  margin: 0.1rem;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.25;
+}

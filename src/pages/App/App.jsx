@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
+import Footer from '../../components/Footer/Footer';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 
@@ -20,7 +21,10 @@ export default function App() {
         </Routes>
         :
         <AuthPage setUser={setUser} />
+        
+
       }
+      <Footer />
     </main>
   );
 }
