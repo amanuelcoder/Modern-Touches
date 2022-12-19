@@ -24,9 +24,9 @@ export default function NavBar({ user, setUser }) {
     <nav className="navbar2" >
       <div className="header2"> 
       <ul className="menu2">
-        <li><Link  to="/"><img alt="Logo" /></Link></li>
-        <li><NavLink exact to='/'><p>Home</p></NavLink></li>
-        <li><NavLink  to='/shop'>Shop</NavLink></li>
+        <Link  to="/orders/new"><img alt="Logo" /></Link>
+        <NavLink exact to='/'><p>Home</p></NavLink>
+        <NavLink  to='/shop'>Shop</NavLink>
         <li><NavLink  to='/featured'>Featured</NavLink></li>
         <li><NavLink to='/recommended'>Recommended</NavLink></li>
         <span>Welcome, {user.name}</span>

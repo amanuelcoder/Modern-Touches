@@ -22,7 +22,7 @@
 
   }
 
-  .menu2 li {
+  .menu2 NavLink {
     display: block;
     height: 100%;
     font-size: 20px;
@@ -41,8 +41,8 @@
     color: black;
   }
 
-  .menu2 li:after,
-  .menu2 li:before {
+  .menu2 div:after,
+  .menu2 div:before {
     content: "";
     position: absolute;
     display: block;
@@ -52,7 +52,7 @@
     transition: all 0.5s ease;
   }
   
-  .menu2 li:after {
+  .menu2 div:after {
     width: 0%;
     height: 0%;
     top: 0;
@@ -61,7 +61,7 @@
     border-left: 2px solid transparent;
   }
   
-  .menu2 li:before {
+  .menu2 div:before {
     width: 0%;
     height: 0%;
     right: 0;
@@ -70,8 +70,8 @@
     border-right: 2px solid transparent;
   }
   
-  .menu2 li:hover::before,
-  .menu2 li:hover::after {
+  .menu2 div:hover::before,
+  .menu2 div:hover::after {
     width: 100%;
     height: 100%;
     border-color: rgb(14, 14, 14);
