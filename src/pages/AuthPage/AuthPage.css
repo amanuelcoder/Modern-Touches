@@ -1,0 +1,17 @@
+
+.AuthPage h3 {
+    margin: 0 0 30rem ;
+    padding: 0;
+    color: rgb(251, 251, 251);
+    text-align: center;
+    margin-top: 8rem;
+}
+
+video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }

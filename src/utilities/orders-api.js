@@ -21,7 +21,15 @@ export function setItemQtyInCart(itemId, newQty) {
 }
 
 // Updates the order's (cart's) isPaid property to true
-export function checkout() {
+export function checkout(orderData) {
   // Changing data on the server, so make it a POST request
-  return sendRequest(`${BASE_URL}/cart/checkout`, 'POST');
+  return sendRequest(`${BASE_URL}/cart/checkout`, 'POST', orderData);
+}
+
+export function getAllForUser() {
+  return sendRequest(`${BASE_URL}`);
+}
+
+export function getAllOrders() {
+    return sendRequest(`${BASE_URL}/all`);
 }

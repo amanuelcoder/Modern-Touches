@@ -1,4 +1,12 @@
-.box {
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  
+  .box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,7 +62,7 @@
     font-size: 0.75rem;
   }
   
-  .box input[type="submit"] {
+  .box button[type="submit"] {
     border: none;
     outline: none;
     color: #fff;
@@ -63,8 +71,14 @@
     cursor: pointer;
     border-radius: 0.312rem;
     font-size: 1rem;
+    margin-left: 7rem;
   }
   
-  .box input[type="submit"]:hover {
+  .box button[type="submit"]:hover {
     background-color: #1cb1f5;
+  }
+
+  .error-message {
+    color: #fff;
+    margin-left: 4rem;
   }
