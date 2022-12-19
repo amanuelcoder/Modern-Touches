@@ -82,3 +82,17 @@ body {
     color: #fff;
     margin-left: 4rem;
   }
+
+
+  .box::before{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+   
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: glower 20s linear infinite;
+  }

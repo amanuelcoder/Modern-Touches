@@ -19,20 +19,20 @@ export default function NavBar({ user, setUser }) {
     userService.logOut();
     setUser(null);
   }
-
   return (
-    <nav className="navbar2" >
-      <div className="header2"> 
-      <ul className="menu2">
-        <Link  to="/orders/new"><img alt="Logo" /></Link>
-        <NavLink exact to='/'><p>Home</p></NavLink>
-        <NavLink  to='/shop'>Shop</NavLink>
-        <li className="menu2><NavLink  to='/featured'>Featured</NavLink></li>
-        <li className="menu2><NavLink to='/recommended'>Recommended</NavLink></li>
-        <span>Welcome, {user.name}</span>
-        <li><NavLink to=''onClick={handleLogOut}>Log Out</NavLink></li>
-      </ul>
-      </div>
+    <>
+     <Link className='logo' to="/orders/new"><img src='https://i.imgur.com/90VZtXM.png' alt="Logo" /></Link>
+      <nav  >
+        <ul>
+         
+          <li><NavLink  to='/'>Home</NavLink></li>
+          <li><NavLink  to='/shop'>Shop</NavLink></li>
+          <li><NavLink  to='/featured'>Featured</NavLink></li>
+          <li><NavLink to='/about'>About</NavLink></li>
+          <li><NavLink to=''onClick={handleLogOut}>Log out</NavLink></li>
+          <li>Welcome, {user.name}</li>
+        </ul>
     </nav>
+  </>
   );
 };
