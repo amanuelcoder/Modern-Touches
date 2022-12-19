@@ -27,8 +27,8 @@ export default function NavBar({ user, setUser }) {
         <Link  to="/orders/new"><img alt="Logo" /></Link>
         <NavLink exact to='/'><p>Home</p></NavLink>
         <NavLink  to='/shop'>Shop</NavLink>
-        <li><NavLink  to='/featured'>Featured</NavLink></li>
-        <li><NavLink to='/recommended'>Recommended</NavLink></li>
+        <li className="menu2><NavLink  to='/featured'>Featured</NavLink></li>
+        <li className="menu2><NavLink to='/recommended'>Recommended</NavLink></li>
         <span>Welcome, {user.name}</span>
         <li><NavLink to=''onClick={handleLogOut}>Log Out</NavLink></li>
       </ul>
