@@ -57,7 +57,6 @@ export default function NewOrderPage({ user, setUser }) {
   return (
     <main className="NewOrderPage">
       <aside>
-        <Logo />
         <CategoryList
           categories={categoriesRef.current}
           activeCat={activeCat}

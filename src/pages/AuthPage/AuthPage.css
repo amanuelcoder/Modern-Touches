@@ -4,7 +4,8 @@
     padding: 0;
     color: rgb(251, 251, 251);
     text-align: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 video {
@@ -16,4 +17,9 @@ video {
     min-height: 100%;
   }
 
-  
+#welcome {
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 3vmin;
+    text-align: center;
+}

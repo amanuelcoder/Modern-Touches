@@ -9,15 +9,16 @@ ul {
     background-color: #464545;
     border-radius: 100px;
     box-shadow: 0 10px 20px rgba(255,255,255,0.3);
-    margin-left: 15vmin;
+    margin-left: 33vmin;
     margin-top: 5vmin;
 }
 
 li {
     position: relative;
     display: inline-block;
-    margin-right: 20px;
-    padding: 10px;   
+    margin-right: 10px;
+    padding-right: 0;
+    padding: 5.5px;   
 }
 
 li a {
@@ -39,16 +40,17 @@ li::after {
 }
 
 li a:hover {
-    color: rgb(45,168,240);
+    color: rgb(124, 60, 26);
 }
 
 li:hover::after {
     width: 100%;
-    background-color: rgb(45,168,240);
+    background-color: rgb(254, 255, 255);
 }
 
 li {
-    color: #fff;
+    color: rgb(196, 190, 187);
+    font-size: 24px;
 }
 
 

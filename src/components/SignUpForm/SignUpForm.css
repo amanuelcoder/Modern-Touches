@@ -16,6 +16,7 @@ body {
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 0.625rem;
+    font-family: 'Montserrat', sans-serif; 
   }
   
   .box h2 {
@@ -40,6 +41,7 @@ body {
     border-bottom: 0.065rem solid #fff;
     outline: none;
     background: transparent;
+    font-family: 'Montserrat', sans-serif; 
   }
   
   .box .inputBox label {

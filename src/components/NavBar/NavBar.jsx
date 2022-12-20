@@ -1,17 +1,7 @@
 import * as userService from '../../utilities/users-service';
 import {Link, NavLink, useLocation} from 'react-router-dom';
 import './NavBar.css'
-// import { FilterOutlined, ShoppingOutlined } from '@ant-design/icons';
-// import logo from '@/images/logo-full.png';
-// import React, { useEffect, useRef } from 'react';
-// import { useSelector } from 'react-redux';
 
-// import UserAvatar from '@/views/account/components/UserAvatar';
-// import BasketToggle from '../basket/BasketToggle';
-// import Badge from './Badge';
-// import FiltersToggle from './FiltersToggle';
-// import MobileNavigation from './MobileNavigation';
-// import SearchBar from './SearchBar';
 
 
 export default function NavBar({ user, setUser }) {
@@ -26,11 +16,13 @@ export default function NavBar({ user, setUser }) {
         <ul>
          
           <li><NavLink  to='/'>Home</NavLink></li>
-          <li><NavLink  to='/shop'>Shop</NavLink></li>
-          <li><NavLink  to='/featured'>Featured</NavLink></li>
+          <li><NavLink  to='/product'>Products</NavLink></li>
+          <li><NavLink  to='/orders/new'>Place order</NavLink></li>
+          <li><NavLink  to='/orders'>Previous orders</NavLink></li>
           <li><NavLink to='/about'>About</NavLink></li>
-          <li><NavLink to=''onClick={handleLogOut}>Log out</NavLink></li>
+           &nbsp; | &nbsp;
           <li>Welcome, {user.name}</li>
+          <li><NavLink to=''onClick={handleLogOut}>Log out</NavLink></li>
         </ul>
     </nav>
   </>
