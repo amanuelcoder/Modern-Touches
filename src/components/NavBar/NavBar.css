@@ -2,18 +2,21 @@ nav {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;   
+    padding: 5px;
+    
 }
 
-ul {
+.AuthPage ul {
     list-style: none;
     background-color: #464545;
     border-radius: 100px;
     box-shadow: 0 10px 20px rgba(255,255,255,0.3);
     margin-left: 33vmin;
     margin-top: 5vmin;
+    padding: 7px;
 }
 
-li {
+.AuthPage li {
     position: relative;
     display: inline-block;
     margin-right: 10px;
@@ -57,4 +60,6 @@ li {
 .logo {
     overflow: hidden;
     position: absolute;
+    position: fixed;
 }
+
