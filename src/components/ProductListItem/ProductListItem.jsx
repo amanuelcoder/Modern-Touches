@@ -13,7 +13,7 @@ export default function ProductListItem({ productItem, handleAddToOrder }) {
           <div className="buy">
             <span>${productItem.price}</span>
             <button className="btn-sm" onClick={() => handleAddToOrder(productItem._id)}>
-              ADD
+              ADD TO CART
             </button>
           </div>
         </div>

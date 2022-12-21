@@ -9,3 +9,16 @@
     margin-top: 250px;
     margin-right: 53px;
   }
+
+  .ProductList span {
+    display: block;
+  }
+
+  .ProductList button {
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+
+  .ProductList p {
+    font-size: 22px;
+  }

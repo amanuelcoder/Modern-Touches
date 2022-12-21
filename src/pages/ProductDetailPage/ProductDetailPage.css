@@ -1,0 +1,54 @@
+.ProductDetailPage {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.carousel {
+    display: inline;
+    justify-content: center;
+}
+
+.carousel .slide {
+    height: 60vh;
+
+}
+
+.carousel .slide img {
+    max-height: 100%;
+    width: auto;
+    display: inline;
+}
+
+.image {
+    margin: 0 auto;
+    height: 100%;
+    width: 30%
+} 
+
+.ProductDetailPage h1 {
+    display: flex;
+   justify-content: center;
+   text-decoration: underline;
+   font-size: 40px;
+}
+
+
+.ProductDetailPage p {
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+}
+
+.ProductDetailPage button {
+    display: flex;
+    margin-left: 656px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.ProductDetailPage span {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

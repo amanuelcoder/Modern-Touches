@@ -39,7 +39,7 @@ export default function OrderDetail({ user, order, handleChangeQty }) {
           </>
           :
           <>
-            <span>Welcome, {user.name}</span><br></br>
+            <span className='Greeting'>Welcome, {user.name}</span><br></br>
             <div className="hungry">Get yourself a little something </div>
           </>
         }

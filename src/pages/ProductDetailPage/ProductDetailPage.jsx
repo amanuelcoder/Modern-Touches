@@ -4,6 +4,7 @@ import * as itemsAPI from '../../utilities/items-api';
 import './ProductDetailPage.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import CategoryList from "../../components/CategoryList/CategoryList";
 
 export default function ProductDetailPage({ handleAddToOrder }) {
     const [itemDetails, setItemDetails] = useState({});
@@ -19,18 +20,18 @@ export default function ProductDetailPage({ handleAddToOrder }) {
 
 
     return (
-        <div>
+        <div className="ProductDetailPage">
+            
             <h1>{itemDetails.name}</h1>
             <p>{itemDetails.description}</p>
-            <span>${itemDetails.price}</span>
-            <button className="btn-sm" onClick={() => handleAddToOrder(itemDetails._id)}>
-              ADD
-            </button>
             <Carousel  style={{thumbHeight: '20vmin'}} >
                 {itemDetails.images?.map((url, idx) => (
-                    <div key={idx}><img src={`${url}`} alt="" style={{width: '80vmin',  height: '80vmin'}} /></div>
+                    <div className="image" key={idx}><img src={`${url}`} alt=""  /></div>
                 ))}
             </Carousel>
+            <span>${itemDetails.price}</span>
+            <button className="btn-sm" onClick={() => handleAddToOrder(itemDetails._id)}>
+            ADD TO CART</button>  
         </div>
       );
 }
