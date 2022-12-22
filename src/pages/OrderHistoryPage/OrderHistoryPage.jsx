@@ -22,7 +22,7 @@ export default function OrderHistoryPage({ user, handleChangeQty }) {
 
   return (
     <>
-    <h1>Order History for {user.name}</h1>
+    <h1 className='Order3'>Order History for {user.name}</h1>
     <div className='order-history'>
       <OrderList
         orders={orders}

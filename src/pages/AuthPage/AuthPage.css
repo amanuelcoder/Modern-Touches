@@ -1,10 +1,10 @@
-
 .AuthPage h3 {
     margin: 0 0 30rem ;
     padding: 0;
     color: rgb(251, 251, 251);
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    font-size: 25px;
     font-family: 'Montserrat', sans-serif; 
 }
 
@@ -17,9 +17,27 @@ video {
     min-height: 100%;
   }
 
-#welcome {
-    color: aliceblue;
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 3vmin;
-    text-align: center;
-}
+.Welcome {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(81, 183, 214), rgb(208, 11, 181), #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+
+@keyframes animate {
+    0% {
+      background-position: -400%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }

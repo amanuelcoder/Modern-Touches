@@ -1,0 +1,41 @@
+.checkout-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.625rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 450px;
+    margin-top: 80px;
+}
+
+.inputBox1 input {
+    width: 100%;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: none;
+    border-bottom: 0.065rem solid #fff;
+    outline: none;
+    font-family: 'Montserrat', sans-serif; 
+    background-color: rgb(127, 127, 127);
+    border: none;
+  }
+
+.btn3 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    margin-left: 110px;
+}
+
+.btn3:hover {
+    color: white;
+    background-color: black;
+    border: none;
+   }

@@ -4,7 +4,7 @@ import * as itemsAPI from '../../utilities/items-api';
 import './ProductDetailPage.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import CategoryList from "../../components/CategoryList/CategoryList";
+
 
 export default function ProductDetailPage({ handleAddToOrder }) {
     const [itemDetails, setItemDetails] = useState({});
@@ -18,11 +18,11 @@ export default function ProductDetailPage({ handleAddToOrder }) {
         getItem();
     }, [itemId]);
 
-
     return (
         <div className="ProductDetailPage">
             
             <h1>{itemDetails.name}</h1>
+            <h2>About This Item:</h2>
             <p>{itemDetails.description}</p>
             <Carousel  style={{thumbHeight: '20vmin'}} >
                 {itemDetails.images?.map((url, idx) => (

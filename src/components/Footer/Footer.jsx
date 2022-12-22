@@ -8,7 +8,7 @@ export default function Footer()  {
       &copy; {new Date().getFullYear()}
       <span> Modern Touches </span>
     </h5>
-    <h5>   All Rights Reserved </h5>
+    <h5 id="footer">   All Rights Reserved </h5>
   </div>
 }
 

@@ -6,8 +6,9 @@
     justify-content: center;
     align-items: center;
     float: right; 
-    margin-top: 250px;
+    margin-top: 150px;
     margin-right: 53px;
+    margin-bottom: 100px;
   }
 
   .ProductList span {
@@ -17,6 +18,7 @@
   .ProductList button {
     padding: 8px;
     margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .ProductList p {

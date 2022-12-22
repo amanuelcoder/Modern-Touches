@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    
     background-size: cover;
     font-family: sans-serif;
   }
@@ -68,12 +67,14 @@ body {
     border: none;
     outline: none;
     color: #fff;
-    background-color: #03a9f4;
+    background-color: #d403f4;
     padding: 0.625rem 1.25rem;
     cursor: pointer;
     border-radius: 0.312rem;
     font-size: 1rem;
     margin-left: 7rem;
+    font-family: 'Montserrat', sans-serif; 
+    padding-bottom: 25px;
   }
   
   .box button[type="submit"]:hover {
@@ -91,7 +92,6 @@ body {
     position: absolute;
     left: -2px;
     top: -2px;
-   
     background-size: 400%;
     width: calc(100% + 5px);
     height: calc(100% + 5px);

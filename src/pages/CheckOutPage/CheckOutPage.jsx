@@ -16,15 +16,15 @@ export default function CheckOutPage ({order, handleChangeQty, handleCheckout}) 
 
     return (
         <>
-        <h1>Cart Checkout</h1>
+        <h6>Cart Checkout</h6>
         <div className="checkout-page">
         <CheckOutForm handleCheckout={handleCheckout}/>
             <section className="checkout-items">
-                <span>ORDER <span className="smaller">{order.orderId}</span></span>
+                <span className="Order">ORDER <span className="smaller">{order.orderId}</span></span>
                 <span>{new Date(order.updatedAt).toLocaleDateString()}</span>
                     {lineItems}
                 <span>{order.totalQty}</span>
-                <span className="right">Total: ${order.orderTotal.toFixed(2)}</span>
+                <span className="right1">Total: ${order.orderTotal.toFixed(2)}</span>
                 <br></br>
             </section>
       </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './CheckOutForm.css'
 
 export default function CheckOutForm({handleCheckout}) {
     const [checkoutForm, setCheckoutForm] = useState({
@@ -16,6 +17,7 @@ export default function CheckOutForm({handleCheckout}) {
 
     return (
         <form className="checkout-form" onSubmit={(evt) => handleCheckout(evt, checkoutForm)}>
+            <div className="inputBox1">
             <label>Full Name</label>
             <input type="text"
                 name="name"
@@ -23,6 +25,8 @@ export default function CheckOutForm({handleCheckout}) {
                 onChange={handleChange} 
                 required
             />
+            </div>
+            <div className="inputBox1">
             <label>Address</label>
             <input type="text"
                 name="address"
@@ -30,13 +34,17 @@ export default function CheckOutForm({handleCheckout}) {
                 onChange={handleChange}
                 required
             />
-            <label>City</label>
+            </div>
+            <div className="inputBox1">
+            <label className="inputBox1">City</label>
             <input type="text"
                 name="city"
                 value={checkoutForm.city} 
                 onChange={handleChange}
                 required
             />
+            </div>
+            <div className="inputBox1">
             <label>State</label>
             <input type="text"
                 name="state"
@@ -44,6 +52,8 @@ export default function CheckOutForm({handleCheckout}) {
                 onChange={handleChange}
                 required
             />
+            </div>
+            <div className="inputBox1">
             <label>Zip</label>
             <input type="number"
                 name="zip"
@@ -51,12 +61,12 @@ export default function CheckOutForm({handleCheckout}) {
                 onChange={handleChange} 
                 required
             />
+            </div>
             <button
-                className="btn-sm"
+                className="btn3"
                 type="submit"
                 >CHECKOUT
             </button>
     </form>
     );
-
 }

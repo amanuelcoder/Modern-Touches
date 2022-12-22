@@ -42,7 +42,7 @@ const Item = require('./models/item');
      category: categories[0], price: 189.00},
      {name: 'Tokyo Totepack', 
      description: 'This premium leather upgrade to our Tokyo Totepack adapts to your day, with two carry modes and surprisingly sorted storage.',
-     images: ['https://i.imgur.com/P3at71e.png', 'https://i.imgur.com/jLUL2EQ.png'], 
+     images: ['https://i.imgur.com/P3at71e.png', 'https://i.imgur.com/jLUL2EQ.png', 'https://i.imgur.com/4EsuFzx.png', 'https://i.imgur.com/ekNqEnr.png', 'https://i.imgur.com/TI2FuH0.png', 'https://i.imgur.com/JNzVbFJ.png', 'https://i.imgur.com/2zfiiyl.png'], 
      category: categories[0], price: 289.00},
      {name: 'Lite Duffel', 
      description: 'A traditional duffel with a twist, this bag is rugged enough for adventure, but light enough to let you move like the wind.',
@@ -196,18 +196,9 @@ const Item = require('./models/item');
      description: 'From work to workouts, this sleek performance strap complements your Apple Watch, with sculpted curves and a smooth leather touch.',
      images: ['https://i.imgur.com/I03w6ci.png', 'https://i.imgur.com/GJl01Ig.png'],  
      category: categories[3], price: 69.00},
-
-
-
-    
-   
-    
-    
-  
   ]);
 
-  console.log(items)
-
-  process.exit();
+ console.log(items)
+ process.exit();
 
 })();

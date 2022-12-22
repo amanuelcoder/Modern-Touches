@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import * as itemsAPI from '../../utilities/items-api';
 import CategoryList from '../../components/CategoryList/CategoryList';
-import NavBar from '../../components/NavBar/NavBar';
 import ProductList from '../../components/ProductList/ProductList';
 import './HomePage.css';
 import AdminPage from '../AdminPage/AdminPage';
@@ -22,11 +21,10 @@ export default function HomePage({ user, handleAddToOrder}) {
   }, []);
 
   return (
-    <div className="HomePage">
+    <div>
       {user.admin ? <AdminPage categories={categoriesRef.current} /> 
       :
-      <>      
-        
+      <>    
         <CategoryList           
           categories={categoriesRef.current}
           activeCat={activeCat}

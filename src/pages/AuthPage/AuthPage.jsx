@@ -9,13 +9,13 @@ export default function AuthPage({ setUser }) {
 
   return (
     <main className="AuthPage">
-      <p id='welcome'>WELCOME TO MODERN TOUCHES</p>
+       <h2 className='Welcome'>WELCOME TO MODERN TOUCHES</h2> 
       <div>
-        <h3 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}</h3>
+        <h3 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOGIN'}</h3>
       </div>
       {showLogin ? <LoginForm setUser={setUser} /> : <SignUpForm setUser={setUser} />}
       <video src="https://i.imgur.com/7IaI0b7.mp4" type="video/mp4" autoPlay loop muted />
-      </main>
+    </main>
   );
 }
 

@@ -27,28 +27,47 @@
 } 
 
 .ProductDetailPage h1 {
-    display: flex;
+   display: flex;
    justify-content: center;
    text-decoration: underline;
    font-size: 40px;
+   font-family: 'Montserrat', sans-serif;
 }
 
 
 .ProductDetailPage p {
+   width:50%;
    display: flex;
    justify-content: center;
-   padding: 10px;
+   font-family: 'Cormorant', serif;
+   font-size: 30px;
+   margin-left: 430px;
 }
 
 .ProductDetailPage button {
     display: flex;
-    margin-left: 656px;
+    margin-left: 660px;
     padding: 10px;
     margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 150px;
 }
 
 .ProductDetailPage span {
     display: flex;
     justify-content: center;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.ProductDetailPage button:hover {
+    color: white;
+    background-color: black;
+    border: none;
+   }
+
+.ProductDetailPage h2 {
+    font-family: 'Cormorant', serif;
+    margin-left: 435px;
+    padding: 0%;
+   }

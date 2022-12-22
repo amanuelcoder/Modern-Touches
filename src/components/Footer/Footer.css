@@ -1,14 +1,14 @@
-
 .Footer  {
    position: fixed;
    bottom: 0;
    width: 100%;
-   font-family: 'Montserrat', sans-serif; 
+   font-family: 'Cormorant', serif;  
    margin-left: 50px;
+   font-size: 23px;
 }
 
 .Footer span {
-  color: rgb(241, 163, 7)
+  color: brown;
 }
 
 .Footer  h5 {
@@ -17,4 +17,8 @@
   text-transform: none;
   line-height: 1.25;
   margin-left: 10px;
+}
+
+#footer {
+  margin-left: 24px;
 }

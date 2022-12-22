@@ -1,19 +1,16 @@
 .product-item-card {
     border-radius: 6px;
-    
+    font-family: 'Montserrat', sans-serif;
   }
   
   .product-img {
     margin-bottom: 5vmin;
- 
   }
 
   .item-img {
     height: 45vh;
     width: 115%;
     border-radius: 6px;
-    box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.5);
-
   }
 
   .product-details {
@@ -26,4 +23,13 @@
     margin-top: 10px;
   }
 
-  
+  .product-item-card:hover {
+    transform: scale(1.1);
+    transition: transform 150ms ease-in;
+  }
+
+  .product-details button:hover {
+   color: white;
+   background-color: black;
+   border: none;
+  }
